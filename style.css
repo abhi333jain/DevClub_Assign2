@@ -1,0 +1,468 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background:white;
+    background-size:cover;
+    z-index: -2px;
+    overflow-x: hidden;
+}
+.cover{
+   background-image: url(images/background.jpg);
+   background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.menubar{
+    display: none;
+}
+.image{
+    height: 600px;
+    height: 75vh;
+    background:url(images/pic1.JPG);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    z-index:-100px;
+    width: 45vw;
+    position: relative;
+    top:100px;
+    left:50%;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-color: black;
+    border-width: thick;
+    box-shadow: 5px 5px 5px black;
+}
+
+.next{
+      background-color: rgba(0,0,0,0.1);
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 32vh;
+    left: 97%;
+    
+ }
+.n1{
+    width: 25px;
+    background-color: white;
+    height:5px;
+    transform: translateY(-2px);
+    transform: rotateZ(45deg);
+}
+.n2{
+    width: 25px;
+    background-color: white;
+    height:5px;
+    position: relative;
+    top:8.7px;
+     transform: rotateZ(-45deg);
+}
+.prev{
+    background: rgba(0,0,0,0.1);
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 32vh;
+    right: 60px;
+ }
+.p1{
+    width: 25px;
+    background-color: white;
+    height:5px;
+    transform: translateY(-2px);
+    transform: rotateZ(-45deg);
+}
+.p2{
+    width: 25px;
+    background-color: white;
+    height:5px;
+    position: relative;
+    top:8.7px;
+     transform: rotateZ(45deg);
+}
+
+nav{
+    background-color: black;
+    height: 55px;
+    z-index: 10px;
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+nav>ul{
+    list-style-type: none;
+}
+nav>ul>li{
+    display: inline-block;
+}
+nav>ul>li>a{
+    padding: 0.4px 12px;
+    text-decoration: none;
+    color:darkgray;
+    line-height: 55px;
+    font-size: 20px;
+    display: block;
+    
+}
+
+.m6{
+    /*right:5px;*/
+    float: right;
+
+}
+.m5{
+    /*right:120px;*/
+    float: right;
+}
+
+nav>ul>li>a:hover {
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.aboutme ,  .hobby , .project,.last{
+    background-color:bisque;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top:100vh;
+    background-size: cover;
+    z-index:-1px;
+    border-top-style: solid;
+    border-top-color: black;
+    border-top-width: 5px;
+     border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 5px;
+}
+.hobby{
+    background-color: skyblue;
+}
+.project{
+     background-color:lightgreen;
+}
+@media screen and (max-width:780px){
+    .m2,.m3,.m4,.m5,.m6{
+          display: none;
+    }
+    .menubar{
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        background-color: black;
+        height: 36px;
+        width: 30px;
+        right: 11px;
+        top:10px;
+        outline: none;
+        border-style: solid;
+        border-color: black;
+    }
+    .menubar:hover .mb1
+    {
+        background-color: white;
+    }
+    .menubar:hover .mb2{
+        background-color: white;
+    }
+    .menubar:hover .mb3{
+        background-color: white;
+    }
+    .menubar .mb1{
+        position: fixed ;
+        right: 8px;
+        top:14px;
+        height: 2.5px;
+        width: 25px;
+        background-color: darkgrey;
+        margin: 5px;
+    }
+    .menubar .mb2{
+        position: fixed ;
+        right: 8px;
+        top:22px;
+        height: 2.5px;
+        width: 25px;
+        background-color: darkgray;
+        margin: 5px;
+    }
+    .menubar .mb3{
+        position: fixed ;
+        right: 8px;
+        top:30px;
+        height: 2.5px;
+        width: 25px;
+        background-color: darkgray;
+        margin: 5px;
+    }
+   nav>ul>li {
+       display: block;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,.8);
+       z-index: 10px;
+}
+     .m1{
+    display: block;
+    width: 150px;
+    text-align:left;    
+}
+    nav>ul>li>a{
+    padding: 0.4px 12px;
+    text-decoration: none;
+    color:darkgray;
+    line-height: 55px;
+    font-size: 20px;
+    
+}
+     
+   
+}
+.last{
+    background-color: lightcoral;
+}
+.feedback{
+    background-color: lightseagreen;
+    width: 70%;
+    height: 60vh;
+    position: absolute;
+    top:15vh;
+    left:50%;
+    transform: translateX(-50%);
+    border-style: double;
+    border-color:darkslateblue;
+    border-width: thick;
+}
+.last p{
+    line-height: 5vh;
+    font-size: 4vh;
+    color: black;
+    font-family: cursive;
+    margin-left:1%;
+}
+#uname{
+    width: 40%;
+    height: 5vh;
+    font-size: 3vh;
+    position: relative;
+    left:15%;
+    bottom:5vh;
+    border:4px solid darkslateblue;
+    border-radius: 8px;
+    padding: 4px;
+}
+#commentin{
+    width: 70%;
+    height: 5vh;
+    font-size: 3vh;
+    position: relative;
+    left:20%;
+    bottom:5vh;
+     bottom:5vh;
+    padding: 4px;
+    border:4px solid darkslateblue;
+       border-radius: 8px;
+}
+#uname:focus{
+    box-shadow: 5px 0 10px white;
+}
+#comment:focus{
+    box-shadow: 5px 0 10px white;
+}
+#send{
+    width:100px;
+    height: 7vh;
+    border: none;
+    border-radius: 8px;
+    background-color: blue;
+    color: aliceblue;
+    position: relative;
+    right: 70%;
+    top:3vh;
+    font-family: cursive;
+    font-size: 3vh;
+}
+#send:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+#commentout{
+    max-height: 43vh;
+    margin-left:1vh;
+     margin-right:1vh;
+    margin-top: 4vh;
+    background-color: bisque;
+    font-size: 2.8vh;
+    font-family: cursive;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    list-style: none;
+    overflow-y:scroll;
+}
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    position:relative;
+    top:80vh;
+    border-top: solid darkgrey 4px;
+}
+footer div{
+    font-family: cursive;
+    font-size: 5vh;
+    color: aliceblue;
+    margin-left: 20%;
+}
+footer img{
+    height: 10vh;
+    position: relative;
+    left:45%;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+footer img:hover{
+    height: 11vh;
+    position: relative;
+    margin-top: 7px;
+    cursor: pointer;
+    width: 6%;
+    
+}
+.project{
+    display: flex;
+    align-items: center;
+        justify-content:space-around;
+
+}
+.project h1{
+    flex :1;
+    font-size: 8vh;
+    text-align: center;
+    text-decoration: underline;
+    margin-left: 3%;
+}
+.project img{
+      flex:2;
+     border-style: solid;
+    border-width: 4px;
+    border-color: black;
+      border-radius: 15px;
+    margin-left: 7%;
+}
+.project p{
+      flex: 1;
+     line-height: 5vh;
+    font-size: 4vh;
+    color: black;
+    font-family: cursive;
+    background-color: aliceblue;
+    border:solid;
+    text-align: center;
+    margin-right: 5%;
+      padding: 10px;
+    border-radius: 8px;
+}
+.aboutme p{
+    width: 50%; 
+    position: absolute;
+    top:20vh;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-top: 11vh;
+    line-height: 5vh;
+    font-size: 4vh;
+    color: black;
+    font-family: cursive;
+    background-color: aliceblue;
+    border:solid;
+    border-radius: 15px;
+    margin-left:0.5%;
+}
+
+.aboutme .imgme{
+    width: 45%;
+    float: right;
+   background : url(images/pic6.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    height:75vh;
+    border-radius: 15px;
+    margin-right: .5%;
+}
+.aboutme h1{
+    font-size: 7vw;
+    position: relative;
+    top:10vh;
+    left: 6%;
+    font-family: cursive;
+    font-style: italic;
+    color:black;
+}
+.hobby h1{
+    font-size: 7vw;
+    position: relative;
+    top:10vh;
+    left: 46%;
+    font-family: cursive;
+    font-style: italic;
+    color:black;
+}
+.hobby ul{
+     width: 33%; 
+    position: absolute;
+    top:30vh;
+    left: 50%;
+    padding-left: 3%;
+    padding-bottom: 10px;
+    padding-top: 8px;
+    margin-top: 11vh;
+    line-height: 5.5vh;
+    font-size: 4.2vh;
+    color: black;
+    font-family: cursive;
+    background-color: aliceblue;
+    border:solid;
+    border-radius: 15px;
+    
+}
+.hobby .imgh{
+     width: 40vw;
+    float: left;
+    position: relative;
+    top:10vh;
+   background : url(images/hobby.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    height:50.7vh;
+    border-radius: 15px;
+    margin-left: .5%;
+}
+} 
+
+
+
+
+@media screen and (max-width:1000px){
+#uname , #commentin,#send{
+        position: static;
+    margin: 2px;
+    }
+}
+
+
